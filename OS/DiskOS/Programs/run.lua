@@ -89,7 +89,7 @@ end
 
 --Add peripherals api
 local blocklist = { HDD = true, WEB = true, Floppy = true }
-local perglob = {GPU = true, CPU = true, Keyboard = true, RAM = true} --The perihperals to make global not in a table.
+local perglob = {GPU = true, CPU = true, Keyboard = true, RAM = true, Audio = true} --The perihperals to make global not in a table.
 
 local _,directapi = coroutine.yield("BIOS:DirectAPI"); directapi = directapi or {}
 local _,perlist = coroutine.yield("BIOS:listPeripherals")

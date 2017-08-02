@@ -34,8 +34,8 @@ function package.searchpath(name,path,sep,rep)
   
   if path:gsub(-1,-1) ~= ";" then path = path..";" end
   for p in string.gmatch(path,"(.-);") do
-    local presolved = term.resolve(p)
-    if fs.exists(presolved) then
+    local presolved, exists = term.resolve(p)
+    if exists then
       return presolved
     else
       errmsg = "\nno file'"..presolved.."'"

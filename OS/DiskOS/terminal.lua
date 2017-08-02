@@ -139,7 +139,8 @@ function term.resolve(path)
     end
     
     path = d..":/"..table.concat(dirs,"/")
-    return path, fs.exists(path)
+    local ok, exists = pcall(fs.exists,path)
+    return path, (ok and exists or false)
   end
 end
 
@@ -165,6 +166,7 @@ function term.execute(command,...)
         if file == command..".lua" then
           term.executeFile(path..file,...)
           textinput(true)
+          if StopAudio then StopAudio() end
           color(7) pal() palt() cam() clip() return true
         end
       end

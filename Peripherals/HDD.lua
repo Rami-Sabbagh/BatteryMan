@@ -180,7 +180,7 @@ return function(config) --A function that creates a new HDD peripheral.
   
   function HDD.exists(fname)
     if type(fname) ~= "string" then return false, "File/Folder name must be a string, provided: "..type(fname) end --Error
-    local path = devkit.resolve(fname); if not path then return false, "Drive doesn't exists" end
+    local path = devkit.resolve(fname); if not path then return true, false end
     return true, love.filesystem.exists(path)
   end
   

@@ -1,45 +1,36 @@
-# LIKO-12
+## Story:
+Once a day, you woke up, and found yourself in a maze with an electronic heart instead of the natural one, then, a robot comes to you and tells you have been put into tests, you have to finish each level to recharge your heart before it runs out of power.
 
-![The Terminal](http://liko-12.readthedocs.io/en/latest/Terminal.gif)
+This is my first Ludum Dare Jam game ever, I had some problems managing my time, and here's what I came with.
 
-## About:
+I hope you enjoy it :)
 
-LIKO-12 is an _open source_ **fantasy computer** completely written in the Lua programming language where you can make, play and share tiny retro-looking games and programs.
+## Controls:
+### Default Keyboard Controls:
+- **Left, Right:** Player movement.
+- **Up, Z:**  Jump.
+- **Down, X:** Interact, drop and pick crates.
+- **C:** The "Start" button, to respawn in the game.
 
-The LIKO-12 fantasy computer comes with a default, fully customizable, DOS-like operating system installed, called DiskOS, which provides an environment with basic command line programs and visual game editors.
+You can change the default controls by pressing `K` in the main menu.
 
-Games are stored as disk files that can be saved, shared and uploaded to pastebin via the built-in program.
+### Joysticks:
+It's also possible to use a joystick, be sure to remap it's buttons by pressing `J` in the main menu.
 
-## Specifications:
+## Credits:
+- **Game and Levels:** By Rami Sabbagh (@RamiLego4Game).
+- **Sounds and Music:** By Mikey Fewkes.
 
-| Spec  | Info                                |
-| ----- | ----------------------------------- |
-| CPU   | LuaJIT (Lua 5.1)                    |
-| GPU   | 192x128 4-Bit Screen                |
-| Map   | 144x128 Cell (255 Tile)             |
-| HDD   | 144x128 Cell (255 Tile)             |
-| Input | Keyboard, Mouse, Touch, and Gamepad |
+## About LIKO-12
 
-## Social links:
+The game has been made using LIKO-12, an opensource fantasy computer made using the LÖVE framework, and actually it's using a modified version that has Audio support, it loads the wav and ogg files in the Audio folder, give them ids, and then in the game I call "Music(id)", "SFX(id)" and "StopAudio()", I will write a devblog soon telling about all the modifications I made while creating this game.
 
-| Type           | Link                                                      |
-| -------------- | --------------------------------------------------------- |
-| Itch.io        | [LIKO-12](https://ramilego4game.itch.io/liko12)           |
-| Documentation  | [ReadTheDocs](http://liko-12.readthedocs.io)              |
-| Twitter        | [@RamiLego4Game](https://twitter.com/ramilego4game)       |
-| Discord (Chat) | [Fantasy Consoles Server](https://discord.gg/H48rBJy)     |
-| Trello Board   | [LIKO-12](https://trello.com/b/bHo8Y9sx/liko-12)          |
-| Github         | [LIKO-12](https://github.com/RamiLego4Game/LIKO-12)       |
-| Email          | [ramilego4game@gmail.com](emailto:ramilego4game@gmail.com)|
 
-## Releases/Downloads Page: 
+## Screenshots:
 
-* **Itch.io:** https://ramilego4game.itch.io/liko12
-* **Github:** https://github.com/RamiLego4Game/LIKO-12/releases/
+![LIKO12-1501547502.png](///raw/261/8/z/82d3.png)
+![LIKO12-1501547370.png](///raw/261/8/z/82d4.png)
+![LIKO12-1501547399.png](///raw/261/8/z/82d6.png)
+![LIKO12-1501547447.png](///raw/261/8/z/82d8.png)
 
-## Guides:
-
-**Official Documentation**: [ReadTheDocs](http://liko-12.readthedocs.io)
-
-* [Installation Guide](http://liko-12.readthedocs.io/en/latest/Installation%20Guide/)
-* [Getting Started](http://liko-12.readthedocs.io/en/latest/Getting%20Started/)
+Note: Android build coming soon !

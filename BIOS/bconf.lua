@@ -71,5 +71,6 @@ local RAMConfig = {
 }
 
 local RAM, RAMKit = assert(P("RAM","RAM",RAMConfig))
+local Audio, AudioKit = assert(P("Audio"))
 
-local _, WEB, WEBKit = P("WEB","WEB",{CPUKit = CPUKit})
+--local _, WEB, WEBKit = P("WEB","WEB",{CPUKit = CPUKit})

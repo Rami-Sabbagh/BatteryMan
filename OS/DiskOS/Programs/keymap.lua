@@ -39,7 +39,7 @@ local function erase(str)
   end
 end
 
-for p=1, 2 do
+for p=1, 1 do
   for b=1,#bname do
     if p == 1 then color(12) else color(8) end
     print("Player #"..p,false) color(6)

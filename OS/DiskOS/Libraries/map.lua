@@ -79,9 +79,15 @@ local function newMap(w,h,sheet)
     data = data:gsub("\n","")
     local w,h,mdata = string.match(data,"LK12;TILEMAP;(%d+)x(%d+);(.+)")
     local nextid = mdata:gmatch("(.-);")
-    self:map(function(x,y,sprid)
-      return 0
-    end)
+    --ReInitialize the map table
+    self.w, self.h = tonumber(w), tonumber(h)
+    self.m = {}
+    for x=0, self.w-1 do
+      self.m[x] = {}
+      for y=0, self.h-1 do
+        self.m[x][y] = 0
+      end
+    end
     
     for y=0,h-1 do
       for x=0,w-1 do
